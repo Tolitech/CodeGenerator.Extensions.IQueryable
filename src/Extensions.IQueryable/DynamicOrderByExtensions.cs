@@ -4,7 +4,7 @@ namespace Tolitech.CodeGenerator.Extensions.IQueryable
 {
     public static class DynamicOrderByExtensions
     {
-        public static IQueryable<TEntity> DynamicOrderBy<TEntity>(this IQueryable<TEntity> query, string orderByColumns) // where TEntity : Entity
+        public static IQueryable<TEntity> DynamicOrderBy<TEntity>(this IQueryable<TEntity> query, string? orderByColumns) // where TEntity : Entity
         {
             if (!string.IsNullOrEmpty(orderByColumns))
             {
